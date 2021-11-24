@@ -1,0 +1,113 @@
+// Header
+#header {
+
+    // nav
+    nav {
+        .page-wrapper {
+            height: 100%;
+        }
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $white;
+        box-shadow: $boxShadow;
+        height: 52px;
+        width: 100%;
+        z-index: 1;
+
+        .container {
+            height: 100%;
+        }
+
+        .navbar {
+            justify-content: space-between;
+            height: 100%;
+
+            .logo {
+                width: 140px;
+
+                a {
+                    display: block;
+                }
+            }
+        }
+
+        .links {
+            height: 100%;
+
+            > ul {
+                height: 100%;
+
+                > li {
+                    height: 100%;
+                    position: relative;
+                    transition: 0.25s all ease-in-out;
+
+                    > a {
+                        height: 100%;
+                        justify-content: center;
+                        padding: 1rem .7rem;
+                        font-size: 15px;
+                        z-index: 1;
+                        transition: 0.25s all ease-in-out;
+                    }
+
+                    &.active, &:hover {
+                        background-color: $primaryColor;
+
+                        > a {
+                            color: $white;
+                        }
+                        svg {
+                            fill: $white;
+                        }
+                    }
+
+                    .dropdown-menu {
+                        background-color: $white;
+                        box-shadow: $boxShadow;
+                        width: 150px;
+                        position: absolute;
+                        top: 58px;
+                        left: 0;
+                        border-radius: $borderRadius;
+                        transform: translateY(-30px);
+                        opacity: 0;
+                        pointer-events: none;
+                        transition: all 0.25s ease-in-out;
+
+                        &.right {
+                            right: 0;
+                            left: auto;
+                        }
+
+                        li {
+                            a {
+                                display: block;
+                                padding: .5rem 1rem;
+                                font-size: 15px;
+                                transition: background-color 0.25s ease-in-out;
+
+                                &:hover {
+                                    background-color: $gray2;
+                                }
+                            }
+
+                            border-bottom: 1px solid $primaryColor;
+
+                            &:last-child {
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+
+                    &.dropdown.active > a + .dropdown-menu {
+                        opacity: 1;
+                        transform: translateY(0);
+                        pointer-events: auto;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+// Body
+body {
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-font-smoothing: auto;
+}
+
+// init
+.flex {
+    display: flex;
+    align-items: center;
+
+    &--jc-c {
+        justify-content: center;
+    }
+
+    &--jc-sb {
+        justify-content: space-between;
+    }
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.img-res {
+    max-width: 100%;
+    height: auto;
+}
+
+p, a {
+    font-size: 16px;
+}
+
+a {
+    display: block;
+    color: $primaryColor;
+}
+
+p {
+    line-height: 26px;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+// btns
+.btn {
+    position: relative;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 21px;
+    background-color: $primaryColor;
+    color: $white;
+    padding: .6rem 1rem;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    transition: 0.25s all ease-in-out;
+
+    svg {
+        fill: $white;
+        width: 24px;
+        height: 24px;
+        margin-left: .7rem;
+    }
+
+    &:hover {
+        background-color: $secondryColor;
+    }
+
+    &--white {
+        background-color: $white;
+        color: $primaryColor;
+        font-weight: 700;
+        padding: .8rem 1rem;
+
+        svg {
+            fill: $primaryColor;
+        }
+
+        &:hover {
+            background-color: $white;
+        }
+    }
+
+    &--small {
+        max-width: 238px;
+    }
+}
+
+// container
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+
+        .width {
+            &-100 {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            &-75 {
+                -ms-flex: 0 0 75%;
+                flex: 0 0 75%;
+                max-width: 75%;
+            }
+            &-50 {
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            &-33 {
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+            }
+            &-25 {
+                -ms-flex: 0 0 25%;
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+
+            &-100, &-75, &-50, &-33, &-25 {
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+// Card
+.card {
+    background-color: $white;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    padding: 1rem;
+    margin-bottom: 30px;
+}

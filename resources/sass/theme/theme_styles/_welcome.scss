@@ -1,0 +1,71 @@
+.about {
+    position: relative;
+
+    .about-svg {
+        svg {
+            width: 80%;
+            height: 100%;
+        }
+    }
+
+    .about-info {
+        position: relative;
+
+        .title {
+            margin-bottom: 2rem;
+
+            h2 {
+                font-size: 4em;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+
+        .desc {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.treatments {
+    background-color: $black-300;
+    position: relative;
+    padding-bottom: 12em;
+
+    .title {
+        text-align: center;
+        margin-bottom: 4.5rem;
+
+        h2 {
+            font-size: 36px;
+            line-height: 46px;
+            color: $white;
+        }
+    }
+
+    .image {
+        height: 275px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    .no-treat {
+        color: $white;
+        margin-bottom: 1.5rem;
+    }
+
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        fill: #ffffff !important;
+        pointer-events: none;
+    }
+}

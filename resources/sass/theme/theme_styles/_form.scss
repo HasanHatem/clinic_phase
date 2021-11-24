@@ -1,0 +1,53 @@
+// Form
+.form {
+    .form-group {
+        margin-bottom: 1.5rem;
+
+        .form-label {
+            font-size: 21px;
+        }
+
+        .input-group {
+            margin-top: 8px;
+
+            input,
+            select,
+            textarea {
+                width: 100%;
+                height: 40px;
+                position: relative;
+                padding: 25px 15px;
+                border: none;
+                color: $black;
+                border-radius: 0.25rem;
+                font-size: 21px;
+                background-color: $gray2;
+
+                &.is-invalid {
+                    border: 1px solid $light_red;
+                }
+            }
+
+            textarea, select {
+                height: auto;
+            }
+        }
+
+        .checkbox-group {
+            label {
+                cursor: pointer;
+            }
+
+            input {
+                cursor: pointer;
+            }
+        }
+
+        .validate-error {
+            font-size: 18px;
+            color: $light_red;
+            display: block;
+            margin-top: 0.4rem;
+        }
+    }
+}

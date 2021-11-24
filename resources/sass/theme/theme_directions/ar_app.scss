@@ -1,0 +1,53 @@
+@import '../theme_styles/app.scss';
+
+/*
+ * Right to left Styles
+ */
+
+ // Body
+ body {
+     direction: rtl;
+ }
+
+ // Header
+.header {
+    .navbar {
+        nav {
+            .logo {
+                a {
+                    margin-left: 1rem;
+                }
+            }
+
+            .links {
+                > ul {
+                    > li {
+                        margin-right: .5rem;
+
+                        > a {
+                            span {
+                                margin-right: .5rem;
+                            }
+                        }
+
+                        .dropdown-menu {
+                            right: 0;
+
+                            &.right {
+                                right: auto;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .wave {
+        left: 0%;
+    }
+
+}
+

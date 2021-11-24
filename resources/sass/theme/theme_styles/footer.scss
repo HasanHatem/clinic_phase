@@ -1,0 +1,14 @@
+footer {
+    position: relative;
+    background-color: $primaryColor;
+    background-image: linear-gradient(315deg, $lightBlue 0%, $primaryColor 74%);
+    padding: 1rem 0;
+
+    .copyrights {
+        text-align: center;
+
+        p {
+            color: $white;
+        }
+    }
+}
