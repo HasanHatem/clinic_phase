@@ -22015,7 +22015,30 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-var initApp = function initApp() {};
+var initApp = function initApp() {
+  var swiperEl = document.querySelector('.mySwiper');
+
+  if (swiperEl) {
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: false,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+      },
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true
+      }
+    });
+  }
+};
 
 document.addEventListener('DOMContentLoaded', initApp);
 

@@ -250,6 +250,42 @@ body {
   -webkit-font-smoothing: auto;
 }
 
+body::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #459adc;
+  border-radius: 0.25rem;
+}
+
+body::-moz-scrollbar {
+  width: 0.3em;
+}
+
+body::-moz-scrollbar-thumb {
+  background-color: #459adc;
+  border-radius: 0.25rem;
+}
+
+body::-ms-scrollbar {
+  width: 0.3em;
+}
+
+body::-ms-scrollbar-thumb {
+  background-color: #459adc;
+  border-radius: 0.25rem;
+}
+
+body::scrollbar {
+  width: 0.3em;
+}
+
+body::scrollbar-thumb {
+  background-color: #459adc;
+  border-radius: 0.25rem;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -418,12 +454,19 @@ p {
   border-radius: 0.25rem;
   font-size: 21px;
   background-color: #f0f0f0;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .form .form-group .input-group input.is-invalid,
 .form .form-group .input-group select.is-invalid,
 .form .form-group .input-group textarea.is-invalid {
   border: 1px solid #ff5e5e;
+}
+
+.form .form-group .input-group input:focus,
+.form .form-group .input-group select:focus,
+.form .form-group .input-group textarea:focus {
+  border-left: 2px solid #459adc;
 }
 
 .form .form-group .input-group textarea,
@@ -634,6 +677,140 @@ p {
   width: 100%;
   fill: #ffffff !important;
   pointer-events: none;
+}
+
+.doctors {
+  background-color: #eef2f6;
+  position: relative;
+  padding-bottom: 12em;
+}
+
+.doctors .title {
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.doctors .title h2 {
+  font-size: 11em;
+  margin: 0;
+  padding: 0;
+  color: #00000017;
+}
+
+.doctors .title p {
+  margin-top: -63px;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.doctors .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 3rem;
+}
+
+.doctors .swiper .swiper-slide {
+  background-color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.doctors .swiper .swiper-slide a {
+  display: initial;
+}
+
+.doctors .swiper .swiper-slide a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.doctors .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.contact {
+  margin-bottom: 2rem;
+}
+
+.contact .title {
+  margin-bottom: 3rem;
+}
+
+.contact .title h2 {
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact .headline {
+  margin-bottom: 3rem;
+}
+
+.contact .headline p {
+  color: #459adc;
+}
+
+.contact .info {
+  background-color: #459adc;
+  background: linear-gradient(232deg, #459adc 0%, #7efa99 100%);
+  border-radius: 52% 48% 80% 20%/34% 55% 45% 66%;
+  width: 400px;
+  height: 400px;
+  box-shadow: -30px 30px 100px #d1d1d1, 30px -30px 100px #ffffff;
+  flex-direction: column;
+}
+
+.contact .info ul.contact-info {
+  margin-bottom: 1.5rem;
+}
+
+.contact .info ul.contact-info li a {
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.contact .info ul.contact-info li a svg {
+  margin-right: 0.5rem;
+  fill: #ffffff;
+}
+
+.contact .info .social-holder .social-links li a {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-left: 4px;
+  margin-right: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.contact .info .social-holder .social-links li a.facebook {
+  background-color: #3b5998;
+}
+
+.contact .info .social-holder .social-links li a.facebook svg {
+  fill: #ffffff;
+}
+
+.contact .info .social-holder .social-links li a.instagram {
+  background-color: #E1306C;
+}
+
+.contact .info .social-holder .social-links li a.instagram svg {
+  fill: #ffffff;
 }
 
 footer {

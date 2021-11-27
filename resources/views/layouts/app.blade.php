@@ -18,6 +18,7 @@
     <link href="https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" rel="stylesheet">
 
     <!-- Styles -->
+    @yield('css_files')
     <link href="{{ mix('css/' . app()->getLocale() . '_app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -119,7 +120,10 @@
 
     </div>
 
-    <script src="{{ mix('js/app.js') }}"></script>
+    <!-- JS Files -->
+    @yield('js_files')
+    <script defer src="{{ mix('js/app.js') }}"></script>
+    <!--/ JS Files -->
 
 </body>
 </html>

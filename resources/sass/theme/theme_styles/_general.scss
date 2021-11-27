@@ -11,6 +11,42 @@ html {
 body {
     font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     -webkit-font-smoothing: auto;
+
+    &::-webkit-scrollbar {
+        width: 0.3em;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $primaryColor;
+        border-radius: 0.25rem;
+    }
+
+    &::-moz-scrollbar {
+        width: 0.3em;
+    }
+
+    &::-moz-scrollbar-thumb {
+        background-color: $primaryColor;
+        border-radius: 0.25rem;
+    }
+
+    &::-ms-scrollbar {
+        width: 0.3em;
+    }
+
+    &::-ms-scrollbar-thumb {
+        background-color: $primaryColor;
+        border-radius: 0.25rem;
+    }
+
+    &::scrollbar {
+        width: 0.3em;
+    }
+
+    &::scrollbar-thumb {
+        background-color: $primaryColor;
+        border-radius: 0.25rem;
+    }
 }
 
 // init

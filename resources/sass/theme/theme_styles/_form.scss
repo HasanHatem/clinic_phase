@@ -22,9 +22,14 @@
                 border-radius: 0.25rem;
                 font-size: 21px;
                 background-color: $gray2;
+                box-shadow: $boxShadow;
 
                 &.is-invalid {
                     border: 1px solid $light_red;
+                }
+
+                &:focus {
+                    border-left: 2px solid $primaryColor;
                 }
             }
 
